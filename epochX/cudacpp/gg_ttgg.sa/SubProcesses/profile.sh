@@ -182,6 +182,7 @@ else
   echo "${ncu} --metrics ${metrics} ${cmd}"
   echo
   echo sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) --metrics ${metrics}  --target-processes all ${cmd}
+  echo DEBUG 1
   sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) --metrics ${metrics}  --target-processes all ${cmd}
 
 fi
