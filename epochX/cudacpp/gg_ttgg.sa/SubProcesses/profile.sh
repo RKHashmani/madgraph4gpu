@@ -181,11 +181,11 @@ else
   echo "PROFILING: ${cmd}"
   echo "${ncu} --metrics ${metrics} ${cmd}"
   echo
-  echo sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) -o results_output --metrics ${metrics}  --target-processes all ${cmd}
+  echo sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) -o results_output
   echo DEBUG 1
-  echo sudo touch test.txt
-  sudo touch test.txt
-  sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) -o results_output --metrics ${metrics}  --target-processes all ${cmd}
+  echo touch test.txt
+  touch test.txt
+  sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) -o results_output
   
 
 fi
