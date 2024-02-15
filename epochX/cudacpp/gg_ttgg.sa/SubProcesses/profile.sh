@@ -184,7 +184,7 @@ else
   echo sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) --metrics ${metrics}  --target-processes all ${cmd} -o results_output
   echo DEBUG 1
   echo sudo touch test.txt
-  sudo touch test.txt
+  sudo touch test2.txt
   sudo LD_LIBRARY_PATH=${LD_LIBRARY_PATH} $(which ${ncu}) --metrics ${metrics}  --target-processes all ${cmd} -o results_output
   
 
